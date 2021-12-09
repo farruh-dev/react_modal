@@ -2,7 +2,7 @@ import reactDom from "react-dom";
 import './modal.scss'
 
 const Modal = ({ show, children, w, mh }) => {
-
+    console.log(children);
     return reactDom.createPortal(
         <>
          {
