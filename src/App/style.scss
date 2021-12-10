@@ -1,30 +1,34 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(45deg, rgb(110, 233, 131), rgb(128, 171, 252), #fff);
+    background-color: #54387C;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%2354387C' width='11' height='11'/%3E%3Crect fill='%235b397d' x='10' width='11' height='11'/%3E%3Crect fill='%23623a7d' y='10' width='11' height='11'/%3E%3Crect fill='%23693c7d' x='20' width='11' height='11'/%3E%3Crect fill='%236f3d7e' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23753f7e' y='20' width='11' height='11'/%3E%3Crect fill='%237b407e' x='30' width='11' height='11'/%3E%3Crect fill='%2381427e' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%2387437e' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%238c457e' y='30' width='11' height='11'/%3E%3Crect fill='%2392477e' x='40' width='11' height='11'/%3E%3Crect fill='%2397497e' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%239c4b7d' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23a14e7d' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23a6507d' y='40' width='11' height='11'/%3E%3Crect fill='%23aa537d' x='50' width='11' height='11'/%3E%3Crect fill='%23af557c' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23b3587c' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23b75b7c' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23bb5e7b' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23bf617b' y='50' width='11' height='11'/%3E%3Crect fill='%23c2647b' x='60' width='11' height='11'/%3E%3Crect fill='%23c6687a' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23c96b7a' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23cc6f7a' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23d0727a' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23d3767a' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23d5797a' x='70' width='11' height='11'/%3E%3Crect fill='%23d87d7a' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23db817a' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23dd857a' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23df897b' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23e18d7b' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23e4917c' x='80' width='11' height='11'/%3E%3Crect fill='%23e5957c' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23e7997d' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23e99d7e' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23eba17f' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23eca580' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23edaa81' x='90' width='11' height='11'/%3E%3Crect fill='%23efae83' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23f0b285' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23f1b686' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23f2bb88' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23f3bf8a' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23f4c38d' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23f4c88f' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23f5cc92' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23f6d094' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23f6d497' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23f7d99b' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23f7dd9e' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23f8e1a1' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23f8e6a5' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23f8eaa9' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23f8eead' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23f9f2b1' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23f9f7b5' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23f9fbb9' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23F9FFBE' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
     font-family: Roboto, sans-serif;
 }
 
-#root{
+#root {
     height: 90%;
     width: 90%;
 
-    .title{
+    .title {
         text-align: center;
+        color: #fff;
     }
 }
 
-button{
+button {
     outline: none;
     border: none;
     padding: 15px 20px;
@@ -32,21 +36,22 @@ button{
     cursor: pointer;
 }
 
-input[type=radio]{
+input[type=radio] {
     display: none;
     cursor: pointer;
 }
 
-.white_btn{
+.white_btn {
     background-color: transparent;
     color: #000;
 }
-.dark_btn{
+
+.dark_btn {
     background-color: rgb(0, 0, 0);
     color: #fff;
 }
 
-.container{
+.container {
     width: 100%;
     height: 90%;
     display: flex;
@@ -55,7 +60,7 @@ input[type=radio]{
     justify-content: center;
     margin-right: 0 !important;
 
-    button{
+    button {
         width: 150px;
         padding: 15px 30px;
         border-radius: 10px;
@@ -65,10 +70,15 @@ input[type=radio]{
         font-size: 22px;
         cursor: pointer;
         margin: 10px;
+        transition: background-color 0.2s ease;
+
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.5);
+        }
     }
 }
 
-.mbody_wrap{
+.mbody_wrap {
     width: 100%;
     height: 100%;
     display: flex;
@@ -76,15 +86,15 @@ input[type=radio]{
     align-items: center;
     justify-content: center;
 
-    p{
+    p {
         font-size: 18px;
     }
 
-    .rate{
+    .rate {
         margin: auto;
     }
 
-    .round{
+    .round {
         width: 100px;
         height: 100px;
         border-radius: 50%;
@@ -92,24 +102,25 @@ input[type=radio]{
         align-items: center;
         justify-content: center;
         margin-bottom: auto;
-        
+
     }
 
-    .heart_image{
+    .heart_image {
         background-color: #009D3F11;
-    }    
-    .alert_image{
+    }
+
+    .alert_image {
         background-color: #E4C00011;
     }
 
-    .btns{
+    .btns {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: auto;
 
-        button{
+        button {
             margin: 5px;
         }
     }
