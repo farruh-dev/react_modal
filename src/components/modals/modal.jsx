@@ -2,7 +2,6 @@ import reactDom from "react-dom";
 import './modal.scss'
 
 const Modal = ({ show, children, w, mh }) => {
-    console.log(children);
     return reactDom.createPortal(
         <>
          {
@@ -10,7 +9,7 @@ const Modal = ({ show, children, w, mh }) => {
          
           <div className={`modalContainer ${show ? "show" : ""}`}>
 
-            <div className="modal" onClick={(e) => e.stopPropagation()} style={{width: `${w}px`, minHeight: `${mh}px`}} >
+            <div className="modal" onClick={(e) => e.stopPropagation()} style={{width: `${w}px`, height: `${mh}px`}} >
 
               <main className="modal_content"> {children} </main>
 
