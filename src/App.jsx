@@ -1,8 +1,7 @@
 import { useState } from "react";
-import Modal from "./components/modals/modal";
+import Modal from "./components/Modals/modal";
+import StarRating from "./components/StarRating/StarRating";
 import './style.scss'
-import GR from './greenRound.svg'
-import YR from './yellowRound.svg'
 import heart from './heart.svg'
 import alert from './alert.svg'
 
@@ -31,6 +30,9 @@ function App(){
                         <img src={heart} alt="" />
                     </div>
                     <p>Please, rate the our service. This is important to us</p>
+
+                    <StarRating className={'rate'}/>
+
                     <div className="btns">
                         <button className={"modal-close white_btn"} onClick={() => ToggleRateModal()}>
                         Back

@@ -32,12 +32,17 @@ button{
     cursor: pointer;
 }
 
+input[type=radio]{
+    display: none;
+    cursor: pointer;
+}
+
 .white_btn{
     background-color: transparent;
     color: #000;
 }
 .dark_btn{
-    background-color: #000;
+    background-color: rgb(0, 0, 0);
     color: #fff;
 }
 
@@ -73,6 +78,10 @@ button{
 
     p{
         font-size: 18px;
+    }
+
+    .rate{
+        margin: auto;
     }
 
     .round{
