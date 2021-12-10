@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Modal from "./components/Modals/modal.jsx";
-import StarRating from "./components/StarRating/StarRating.jsx";
+import Modal from "/components/Modals/modal.jsx";
+import StarRating from "/components/StarRating/StarRating.jsx";
 import './style.scss'
 import heart from './heart.svg'
 import alert from './alert.svg'
