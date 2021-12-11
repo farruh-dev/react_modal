@@ -41,6 +41,12 @@ input[type=radio] {
     cursor: pointer;
 }
 
+.outlined_btn {
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+
 .white_btn {
     background-color: transparent;
     color: #000;
@@ -87,7 +93,8 @@ input[type=radio] {
     justify-content: center;
 
     p {
-        font-size: 18px;
+        font-size: 20px;
+        text-align: center;
     }
 
     .rate {
@@ -111,6 +118,10 @@ input[type=radio] {
 
     .alert_image {
         background-color: #E4C00011;
+    }
+
+    .danger_image {
+        background-color: #FF000011;
     }
 
     .btns {

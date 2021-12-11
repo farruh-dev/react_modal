@@ -4,16 +4,26 @@ import StarRating from "./components/StarRating/StarRating";
 import './style.scss'
 import heart from './heart.svg'
 import alert from './alert.svg'
+import logout from './logout.svg'
+import success from './ok.svg'
 
 function App(){
 
     const [rateModal, setRateModal] = useState(false);
     const [alertModal, setAlertModal] = useState(false);
+    const [logoutModal, setLogoutModal] = useState(false);
+    const [successModal, setSuccessModal] = useState(false);
     const ToggleRateModal = () => {
         setRateModal(!rateModal)
     };    
     const ToggleAlertModal = () => {
         setAlertModal(!alertModal)
+    };    
+    const ToggleLogoutModal = () => {
+        setLogoutModal(!logoutModal)
+    };    
+    const ToggleSuccessModal = () => {
+        setSuccessModal(!successModal)
     };
 
     return(
@@ -21,7 +31,9 @@ function App(){
             <h1 className={'title'}>Modal</h1>
             <div className="container">
                 <button onClick={() => ToggleRateModal()}>Rate us</button>
+                <button onClick={() => ToggleSuccessModal()}>Submit</button>
                 <button onClick={() => ToggleAlertModal()}>Delete</button>
+                <button onClick={() => ToggleLogoutModal()}>Log out</button>
             </div>
 
             <Modal show={rateModal} w={514} mh={444}> 
@@ -53,6 +65,35 @@ function App(){
                             Back
                             </button>
                             <button className={"submit dark_btn"}>Cancel the order</button>
+                        </div>
+                    </div>
+            </Modal>
+
+            <Modal show={logoutModal} w={430} mh={360}> 
+                <div className="mbody_wrap">
+                        <div className="round danger_image">
+                            <img src={logout} alt="" />
+                        </div>
+                        <p>Do you really want to log out of the system?</p>
+                        <div className="btns">
+                            <button className={"modal-close white_btn"} onClick={() => ToggleLogoutModal()}>
+                            Back
+                            </button>
+                            <button className={"submit dark_btn"}>Log out</button>
+                        </div>
+                    </div>
+            </Modal>
+
+            <Modal show={successModal} w={430} mh={360}> 
+                <div className="mbody_wrap">
+                        <div className="round heart_image">
+                            <img src={success} alt="" />
+                        </div>
+                        <p>Your order has been accepted.  We will contact you soon</p>
+                        <div className="btns">
+                            <button className={"modal-close outlined_btn"} onClick={() => ToggleSuccessModal()}>
+                                Back
+                            </button>
                         </div>
                     </div>
             </Modal>
